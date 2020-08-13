@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sistema de RH - ABC Goup</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+		integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+	<meta charset="utf-8">
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="index.html">ABC Group</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+		aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav">
+			<li class="nav-item active">
+				<a class="nav-link" href="funcionarios.html">Funcionários <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Solicitar adiantamento</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<body onload="mostrarStorage()">
+
+	<div class="container">
+
+		<div class="header clearfix">
+			<h2 class="text-center mt-5">Sistema de RH ABC Group</h2>
+		</div>
+		<form id="formulario">
+			<div id="aviso"></div>
+			<div class="form-group col-md-12">
+				<label>Nome:</label>
+				<input type="text" class="form-control" name="" id="nomeFuncionario"
+					placeholder="Digite o nome do funcionário">
+			</div>
+			<div class="form-group col-md-6">
+				<label>Salário:</label>
+				<input type="text" class="form-control" name="" id="salario"
+					placeholder="Informe o salário do funcionário">
+			</div>
+			<div class="form-group col-md-6">
+				<label class="text-left">Conta bancária:</label>
+				<input type="text" class="form-control" name="" id="contaBancaria"
+					placeholder="Informe a conta bancáriado funcionário">
+			</div>
+			<div class="form-group col-md-12">
+				<button type="submit" class="btn btn-primary btn-md btn-block mg-button">Salvar</button>
+			</div>
+		</form>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.1.1.js"
+		integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
